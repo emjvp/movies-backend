@@ -1,10 +1,10 @@
 const config = {
     db: {
       /* don't expose password or any sensitive info, done only for demo */
-      host: "localhost",
-      user: "emjvp",
-      password: "emjvp",
-      database: "movies",
+      host: "db4free.net",
+      user: "moviesemjvp",
+      password: "moviesemjvp",
+      database: "moviesemjvp",
     },
     // listPerPage: 10,
   };
