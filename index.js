@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 3010;
 const movies = require("./routes/movies");
 app.use(express.json());
 app.use(
@@ -23,6 +22,6 @@ app.use((err, req, res, next) => {
   res.status(statusCode).json({ message: err.message });
   return;
 });
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server runing...`);
 });
